@@ -8,8 +8,13 @@ Question 1 - 4 are answered in the scripts q1-q3.lua and q4.cpp
 For question 5 I looked into the source code of the forgotten server and checked how other spells/skills are working. I found the spell "exevo gran mas frigo" which is connected to the eternal winter script. 
 In this script I edited the area that the tornados are spawned around the player character. I also set the level and premium requirements to 1 and 0 in the spells.xml that I can test it right away.
 
+`<instant group="attack" spellid="118" name="Eternal Winter" words="exevo gran mas frigo" level="1" mana="1" premium="0" selftarget="1" cooldown="40000" groupcooldown="4000" needlearn="0" script="attack/eternal_winter.lua">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+	</instant> `
+
 ## Question 7:
-For question 7 I created a new module called game_jump and added it to the list in interface.otmod. I created a lua script for the logic and a otmod file for the module logic and a otui file for all the panels and buttons.
+For question 7 I created a new module called game_jump (all files in the folder with the name except the interface.otmod file), placed it in otclient\modules and added it to the list in interface.otmod. I created a lua script for the logic and a otmod file for the module logic and a otui file for all the panels and buttons.
 I managed to let it jump if the button is pressed but I did not manage to always let it move through the window panel.
 
 ## Question 6: skipped
