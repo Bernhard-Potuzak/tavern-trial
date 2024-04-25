@@ -1,0 +1,8 @@
+Module
+  name: game_jump
+  description: Jump the button!
+  author: Bernhard
+  sandboxed: true
+  scripts: [ jump ]
+  @onLoad: init()
+  @onUnload: terminate()

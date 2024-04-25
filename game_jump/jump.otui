@@ -1,0 +1,52 @@
+MiniPanel < Panel
+  text-offset: 0 3
+  text-align: top
+  image-source: /images/ui/minipanel
+  image-border: 2
+  image-border-top: 19
+  padding-left: 7
+  padding-bottom: 7
+  padding-top: 24
+  padding-right: 7
+
+MainWindow
+  size: 549 509
+  id: tasksWindow
+  !text: tr('Jump!')
+
+  @onEnter: modules.game_jump.toggleWindow()
+  @onEscape: modules.game_jump.toggleWindow()
+
+  Label
+    id: info
+    anchors.top: separator.top
+    anchors.left: parent.left
+    width: 140
+    height: 45
+    text-align: center
+    text-wrap: true
+
+  Button
+    id: toggleButton
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    text: Close
+    width: 65
+    @onClick: modules.game_jump.toggleWindow()
+
+
+  Button
+    id: startButton
+    anchors.bottom: parent.bottom
+    anchors.right: toggleButton.left
+    text: Jump!
+    width: 55
+    margin-right: 5
+    @onClick: modules.game_jump.jump()
+
+  ResizeBorder
+    anchors.right: parent.right
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    enabled: true
+    minimum: 190
