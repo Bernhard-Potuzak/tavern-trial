@@ -10,7 +10,7 @@ In this script I edited the area that the tornados are spawned around the player
 
 ## Question 7:
 For question 7 I created a new module called game_jump and added it to the list in interface.otmod. I created a lua script for the logic and a otmod file for the module logic and a otui file for all the panels and buttons.
-I managed to let it jump if the button is pressed but not that it is always moving thorugh the window.
+I managed to let it jump if the button is pressed but I did not manage to always let it move through the window panel.
 
 ## Question 6: skipped
 I skippped this question but I still want to share my thoughts:
