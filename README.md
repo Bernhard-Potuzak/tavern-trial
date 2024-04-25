@@ -3,7 +3,7 @@
 Here you can find all the answer (except for 6) to the questions.
 Question 1 - 4 are answered in the scripts q1-q3.lua and q4.cpp
 
-
+I had some problems with UniServerZ so I decided to use XAMPP which worked like a charm.
 ## Question 5:
 For question 5 I looked into the source code of the forgotten server and checked how other spells/skills are working. I found the spell "exevo gran mas frigo" which is connected to the eternal winter script. 
 In this script I edited the area that the tornados are spawned around the player character. I also set the level and premium requirements to 1 and 0 in the spells.xml that I can test it right away.
